@@ -1,0 +1,83 @@
+
+body{
+  font-family: 'Playfair Display', serif;
+  background: #121212;
+  color:#cccccc;
+  text-align: center;
+  margin:0;
+}
+
+header h1{
+  font-size:39px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #FFD700;
+  text-shadow: 0 0 10px rgba(255,215,0,0.7);
+}
+main{
+  padding-top:15px;
+}
+section h2{
+  font-size:28px;
+  font-weight: bold;
+}
+span{
+  color:#D4AF37;
+  text-shadow: 0 0 10px rgba(255,150,4,0.5);
+  font-weight: bold;
+}
+.mudarTexto::after{
+  content:'Golden Hub.';
+  animation: mudarTexto 15s infinite;
+}
+@keyframes mudarTexto{
+  10%{content:'Golden Hub.';}
+  33%{content:'Templo dos craques.'}
+  66%{content:'Museu da Bola de Ouro.'}
+  100%{content:'Museu de Chuteira de Ouro.'}
+  
+}
+section p{
+  font-size:17px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.hero{
+  padding-bottom: 22px;
+}
+
+button{
+  padding: 10px;
+  border-radius:15px;
+  width:80%;
+  font-size:15px;
+  font-family: georgia;
+  margin-bottom: 20px;
+  
+}
+.ver-bola, .ver-chuteira{
+  background:#FFD700;
+  color:#121212;
+  border:none;
+  box-shadow: 0 0 10px rgba(255,215,0,0.7);
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.ver-bola:hover, .ver-chuteira:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.8);
+}
+#estilizar{
+  animation: slide 2s ease-out forwards;
+}
+@keyframes slide{
+  0%{
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}

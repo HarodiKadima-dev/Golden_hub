@@ -1,0 +1,136 @@
+body{
+  font-family: 'Playfair Display', serif;
+  background: #121212;
+  color:#cccccc;
+  text-align: center;
+}
+
+.hero p{
+  margin: 16px auto 22px;
+  font-size: 16px;
+  max-width: 700px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+main{
+  padding: 8px;
+}
+input{
+  margin-bottom: 40px;
+  padding: 12px 16px;
+  width:100%;
+  max-width: 500px;
+  border:none;
+  border-radius:15px;
+  background: #FFD700;
+  box-shadow: 0 0 10px rgba(255,215,0,0.5);
+  color:black;
+  outline: none;
+}
+
+input::placeholder{
+  color:#333;
+}
+
+input:focus{
+  box-shadow: 0 0 15px rgba(255,215,0,0.8);
+  transform: scale(1.02);
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 24px;
+  max-width: 520px; 
+  padding: 5px;
+  font-size: 10px;
+}
+
+.cardsPequenos{
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.cardsPequenos:hover{
+  border:1px solid #ffd700;
+  transform: translateY(-4px); 
+  box-shadow: 0 4px 15px rgba(255,215,0,0.6);
+}
+.cardsPequenos:active {
+  transform: scale(0.98);
+  background: #222;
+}
+.cardsPequenos h1{
+  font-size:18px;
+  margin: 8px 0;
+  color:#FFD700;
+  text-shadow: 0 0 10px rgba(255,215,0,0.7);
+  font-weight: 600;
+}
+.cardsPequenos h2{
+  font-size:16px;
+  margin:4px 0;
+  color:#d4af37;
+  text-shadow: 0 0 10px rgba(255,150,4,0.5);
+  font-weight: 400;
+}
+.cardsPequenos h3{
+  font-size: 20px;
+  margin:8px 0;
+  color:#fff;
+  font-weight: 700;
+}
+.cardsPequenos p{
+  font-size:14px;
+  color:#fff;
+  text-shadow: 0 0 10px rgba(255,150,4,0.5);
+  font-weight: 400;
+  margin:0;
+}
+.cardsPequenos img{
+  width: 105%;
+  height: 160px; 
+  object-fit: cover; 
+  border-radius: 12px; 
+  margin-bottom: 12px;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.25); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardsPequenos:hover img{
+  transform: scale(1.03); 
+  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5); 
+}
+
+  footer {
+  margin-top: 50px;
+  padding: 20px 10px;
+  border-top: 1px solid rgba(255, 215, 0, 0.2);
+  background: linear-gradient(180deg, transparent, rgba(255, 215, 0, 0.05));
+}
+
+footer h2 {
+  margin-top: 0;
+  font-size: 14px;
+  color: #d4af37;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+footer:hover h2 {
+  opacity: 1;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+}
+.erro{
+  text-align: center;
+  font-size: 18px;
+  color:red;
+  font-weight: bold;
+}
